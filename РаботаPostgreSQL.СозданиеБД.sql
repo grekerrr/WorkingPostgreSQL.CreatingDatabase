@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Performers (
-    PerformersID SERIAL PRIMARY KEY,
-    Performer_	Name TEXT NOT NULL
+   PerformersID SERIAL PRIMARY KEY,
+   Performer_Name TEXT NOT NULL
 )
 
 CREATE TABLE IF NOT EXISTS Genres (
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Genres (
 CREATE TABLE IF NOT EXISTS Albums (
    AlbumID SERIAL PRIMARY KEY,
    Album_Title TEXT NOT NULL,
-	   Release_Year_Album INTEGER NOT NULL
+   Release_Year_Album INTEGER NOT NULL
 )
 
 CREATE TABLE IF NOT EXISTS Tracks(
@@ -44,3 +44,4 @@ CREATE TABLE IF NOT EXISTS Tracks_Collections(
    CollectionID INTEGER NOT NULL REFERENCES Collections(CollectionID),
    TrackID INTEGER NOT NULL REFERENCES Tracks(TrackID)
 )
+
